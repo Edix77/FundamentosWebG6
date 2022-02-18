@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!--POR DEFAULT EL METODO QUE USAMOS ES EL GET-->
+    <!--el metodo get muestra lo que estamos haciendo en la URL, PARAMETROS Y VALORES-->
+    <!--EL METODO POST ENVIA LOS PARAMETROS OCULTOS-->
+    <form action="index.html" method="post">
+        <label for="nombre">  Nombre: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresar Nombre">
+        <br>
+        <label for="apellido">  Apellido: </label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresar apellido">
+        <br>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingresar Apellido">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Ingresar Password">
+        <br>
+        <!--IMPUT RADIO PERMITEN SELECCIONAR UNA OPCION DE UNA LISTA-->
+
+        <input type="radio" id="femenino" name="genero" value="1">
+        <label for="femenino">Femenino</label>
+        <br>
+        <input type="radio" id="masculino" name="genero" value="2">
+        <label for="femenino">Masculino</label>
+        <br>
+        <input type="radio" id="nose" name="genero" value="3">
+        <label for="nose">No Se</label>
+        <br>
+
+        <!--CHECK BOX-->
+        <label for="java">Java</label>
+        <input type="checkbox" id="java" name="lenguaje1" value="1">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" id="js" name="lenguaje2" value="2">
+        <label for="python">Python</label>
+        <input type="checkbox" id="python" name="lenguaje3" value="3">
+        <br>
+        <!--SELECT-->
+        <label for="lenguajes">Seleccione su lenguaje favorito</label>
+        <br>
+        <select name="lenguajes" id="lenguajes">
+            <option value="0">Seleccione</option>
+            <option value="1">Java</option>
+            <option value="2">JavaScript</option>
+            <option value="3">Python</option>
+        </select>
+        <br>
+        <!--TEXT AREA-->
+        <label for="descripcion">Ingrese su reclamo</label>
+        <br>
+        <textarea name="descripcion" id="descripcion" cols="40" rows="4" maxlength="5"></textarea>
+        <br>
+        <!--IMPUT OCULTO-->
+        <input type="hidden" name="modulo" id="1" value="">
+        <br>
+        <!--BOTONES-->
+        <input type="button" value="validar">
+        <br>
+        <input type="submit" value="enviar">
+        <br>
+
+        <input type="datetime" name="" id="">
+        <input type="month" name="" id="" value="date">
+        <input type="time" name="" id="">
+        <input type="week" name="" id="">
+        <input type="date">
+
+
+
+
+
+    </form>
+</body>
+
+</html>
