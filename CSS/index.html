@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        /*ESTO ES UN COMENTARO*/
+        /*EXISTEN 3 FORMAS DE DAR ESTILO A NUESTROS ELEMENTOS*/
+        /*1RA FORMA: ETIQUETA todos los elementos se ven afectados*/
+        
+        body {
+            background: seashell url("assets/img/css.png") no-repeat fixed center;
+            background-size: auto;
+            background-color: #29a8e0;
+            /*los background se sobreescriben*/
+            /*0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f*/
+        }
+        
+        p {
+            color: green;
+            background-color: orange;
+        }
+        
+        div {
+            width: 400px;
+            height: 400px;
+            color: red;
+            background-color: chocolate;
+        }
+        
+        a {
+            text-decoration: line-through;
+            /*
+            none
+            */
+        }
+        /*2DA FORMA: POR CLASE(.) se pueden hacer los cambios a uno o mas elementos*/
+        
+        .web {
+            width: 200px;
+        }
+        
+        .parrafo {
+            color: blue;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*3ra FORMA, ASIGANR ESTILO A TRAVES DEL ID(#): SE AFECTA SOLO EL QUE TENGA EL ID*/
+        /*el mas importante de estas  tres formas es el ID*/
+        
+        #p3 {
+            color: black;
+        }
+        
+        #p4 {
+            color: cyan;
+            width: 100px;
+            height: 100px;
+            /*
+            valores por importacia que tienen nuestros elementos en CSS
+            elemento = 1
+            clase = 10
+            id= 100
+            */
+        }
+        
+        #tituloh2 {
+            text-align: center;
+        }
+        
+        #div2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 id="tituloh2">Lo que sea</h2>
+        <p>Parrafo 1</p>
+        <p class="parrafo">Parrafo 2</p>
+        <p class="parrafo" id="p3">Parrafo 3</p>
+        <p class="parrafo" id="p4">Parrafo 4</p>
+        <a href="#">Texto</a>
+    </div>
+    <br>
+    <hr>
+    <div id="div2">
+        <img class="web" src="assets/img/css.png" alt=" ">
+    </div>
+
+
+</body>
+
+</html>
