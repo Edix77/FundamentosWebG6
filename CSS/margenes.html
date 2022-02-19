@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margenes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: blue;
+        }
+        
+        .container {
+            width: 400px;
+            height: 400px;
+            padding: 10px;
+            background-color: cornflowerblue;
+        }
+        
+        .hijo {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            display: inline-block;
+        }
+        
+        .hijo2 {
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+
+<!--El pading es como una primera capa-->
+<!-- si queremos mantener la proporcion de nuestra clase contenedora tenemos que restarle el padding que se le aplique-->
+
+<!--CUANDO HACEMOS MARGIN Y PADING ESTOS SUMAN TAMAÑO A NUESTROS-->
+
+<!--CUANDO HACEMOS padding individual ejm: 10px 15px 20px 25px lo estamos agregando en el sentido del reloj-->
+<!--10px seria top, 15px seria rigth, 20px seria down o bottom, y 25px seria letf-->
+
+<!--con display:inline-block permite que los elementos se pongan uno al lado del otro pero los dos elementos deben tener la misma propiedad inline-block-->
+
+<body>
+    <p>PARRAFO</p>
+    <div class="container">
+
+        <div class="hijo"></div>
+        <div class="hijo2"></div>
+
+    </div>
+
+</body>
+
+</html>
