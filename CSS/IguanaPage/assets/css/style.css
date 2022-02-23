@@ -2,18 +2,19 @@
     margin: 0;
     border: 0;
     padding: 0;
-    background-color: #000000;
+    
 }
 
 body {
     font-family: 'Raleway', sans-serif;
     width: 100%;
     height: auto;
+    background-color: #000000;
 }
 
 .h1 {
     color: white;
-    background-color: #000000;
+    
     font-size: 5rem;
     font-weight:500;
     padding: 1rem;
@@ -25,7 +26,7 @@ body {
 }
 
 .section2{
-    background-color: #000000;
+    
     color: white;
     display: inline-block;
 }
@@ -45,8 +46,6 @@ body {
     width: 30%;
     padding: 8rem;
     vertical-align: middle;
-    
-
 }
 
 .section3{
@@ -61,14 +60,14 @@ body {
     margin-bottom: 50px;
     font-size: x-large;
     font-weight: 300;
-    background-color: #1E1A13;
+    
 }
 
 .iconos{
     display: inline-block;
     text-align: center;
     width: 30%;
-    background-color: #1E1A13;
+    
 }
 
 h3{
@@ -78,7 +77,7 @@ h3{
 }
 
 .section4{
-    background-color:#000000;
+    
     display:flex;
     justify-content: center;
     align-items: center;
