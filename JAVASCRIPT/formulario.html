@@ -16,7 +16,7 @@
             var numero= 10;
             var numero= 20;
             console.log(typeof numero); // para saber el tipo de dato de una variable
-            miJavaScript();//llamado a la funcion
+            /*miJavaScript();*/ //llamado a la funcion
 
         function miJavaScript(){console.log("Hola mundo","!!", 2);
             alert("Hola mundo");
@@ -45,8 +45,61 @@
 
 
         function validarFormulario(){ 
+            let nombre=document.getElementById("nombre").value;
+            let apellido=document.getElementById("apellido").value;
+            let correo=document.getElementById("correo").value;
+            let password = document.getElementById("password").value;
+            let password2 = document.getElementById("password2").value;
+            
+            /*if(nombre == "" || apellido == "" || correo == "" || password == "" ){
+                alert("debe completar todos los campos requeridos");
+                document.getElementById("nombre").select();
+            }
+            else{
+                alert("su nombre es: "+nombre+"su apellido es: "+apellido+"su correo es: "+correo+ "su pasword es: " +password);
+            }*/
 
+        function validaVacios(){
 
+            let ningunoVacio = true;    
+
+            if(nombre==""){
+                alert("Debe completar el nombre requerido");
+                document.getElementById("nombre").select();
+                ningunoVacio= false;
+            }
+            if(apellido==""){
+                alert("Debe completar el apellido requerido");
+                document.getElementById("apellido").select();
+                ningunoVacio= false;
+            }
+            if(correo==""){
+                alert("Debe completar el correo requerido");
+                document.getElementById("correo").select();
+                ningunoVacio= false;
+            }
+            if(password==""){
+                alert("Debe completar el password requerido");
+                document.getElementById("password").select();
+                ningunoVacio= false;
+            }
+            return ningunoVacio;  
+        }
+        if(validaVacios()==true){
+                alert("su nombre es: "+nombre+"su apellido es: "+apellido+"su correo es: "+correo+ "su pasword es: " +password);
+        }
+            validaPassword(password, password2)
+        
+        }
+        function validaPassword(password,password2){
+            if(password != password2){
+                alert(`las contraseñas ${password} y ${password2} son distintas, deberian ser iguales.`);
+                document.getElementById("password").value="";
+                document.getElementById("password2").value="";
+                document.getElementById("password").select();
+            }else{
+                alert("Las contraseñas son iguales, exito.")
+            }
         }
 
 
@@ -69,7 +122,11 @@
 
             <label for="password" class="form-label">Password:</label>
             <input type="password" class="form-control" id="password" name="password" placeholder="Ingresar password">
+            <label for="password2" class="form-label"> Confirme Password:</label>
+            <input type="password" class="form-control" id="password2" name="password2" placeholder="Ingresar password">
             <br><br>
+
+
             <!-- input radio -->
             <label for="femenino" class="form-check-label">Femenino</label>
             <input type="radio" class="form-check-input" id="femenino" name="genero" value="1">
