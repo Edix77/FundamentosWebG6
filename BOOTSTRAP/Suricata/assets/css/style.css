@@ -1,3 +1,15 @@
-.container{
-    background-color: brown;
+nav{
+    background-color:#e83e8c;
+}
+
+footer{
+    background-color:#e83e8c;
+}
+
+h1{
+    font-size: 400%;
+}
+
+#container1{
+    background-color: #17A2B8;
 }
