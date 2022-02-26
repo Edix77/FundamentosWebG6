@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+
+    <script>
+        var calc = function ejemplo(numero1,numero2){
+            function suma(){
+                return numero1+numero2;
+            }
+            function resta(){
+                return numero1-numero2;
+            }
+            function multiplicacion(){
+                return numero1*numero2;
+            }
+            function division (){
+                return numero1/numero2;
+            }
+            //console.log(suma());
+            return multiplicacion();
+        }
+        var operaciones= calc(4,6);
+        console.log("operaciones" ,operaciones);
+
+        //CICLOS
+        var numero = parseInt(prompt("ingrese un numero"));
+        for(let i=0; i <= 10; i++){
+            if(i==5){
+                continue; //  continue salta todo, llega al final y continua el proceso
+            }
+            if(i==8){
+                break; // break se sale del for
+            }
+            console.log(`${numero}* ${i} = ${numero*i}`); //2*0 investigar place holder
+            if(i==5){
+                
+            }
+        }
+
+
+        //WHILE
+
+        var numero2 = parseInt(prompt("ingrese un numero2"));
+        var i = 0;
+        while(i <10 ){
+            i++;
+            console.log(`${numero2}* ${i} = ${numero2*i}`);
+        };
+
+        //DO-WHILE
+
+        var numero3 = parseInt(prompt("ingrese un numero3"));
+        var i = 0;
+        do{
+            i++;
+            console.log(`${numero3}* ${i} = ${numero3*i}`);  
+        }while(i<10);
+
+
+
+        var nombre = "pedro";
+        var apellido ="gonzalez";
+        var rut = 15264596-5;
+
+        console.log(`su nombre y apellido es: ${nombre} ${apellido},  su apellido es: ${apellido},  su rut es: ${rut}`);            
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
