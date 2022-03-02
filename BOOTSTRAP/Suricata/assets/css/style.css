@@ -13,3 +13,8 @@ h1{
 #container1{
     background-color: #17A2B8;
 }
+
+#divsolucion{
+    justify-content: flex-end;
+    width: 80%;
+}
