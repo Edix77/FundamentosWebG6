@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consmir api</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            /*for(let i=1; i<=500; i++){
+                $(".container").append('<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/'+i+'.png">');
+
+            }*/
+
+            //AJAX para consumir APIS $4.get(URL. CALLBACK -es  lo mismo que function-(respuesta; que seria la informacion que tenemos en la api), FORMATO)
+                    
+            $.get("https://pokeapi.co/api/v2/pokemon/1",function(respuesta){
+                console.log(respuesta);
+                console.log(respuesta.name);
+                console.log(respuesta.abilities[1].ability.name);// chlorophyll
+                console.log(respuesta.types[0].type.name, respuesta.types[1].type.name); // grass -poison
+                console.log(respuesta.sprites.front_default);
+                
+                // card bulbasuar//////////////////////////////////////////////////////////////////////
+                //extraer informacion que viene en arreglo dentro de la api
+                var habilidades = "";
+                var types = "";
+                for (let i = 0; i < respuesta.abilities.length; i++) {
+                    habilidades = habilidades + respuesta.abilities[i].ability.name + " ";
+                }
+
+                var types = "";
+                for (let i = 0; i < respuesta.types.length; i++) {
+                    types = types + respuesta.types[i].type.name + " ";
+                }
+                //extraer informacion que viene en arreglo dentro de la api
+
+                $(".container").append(`
+                <div class="card" style="width: 18rem;">
+                    <img src="${respuesta.sprites.front_default}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${respuesta.name}</h5>
+                        <p class="card-text">Habilidad: ${habilidades}</p>
+                        <p class="card-text">Types: ${types}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                
+                `);
+                // card bulbasuar//////////////////////////////////////////////////////////////////////
+
+            },"json");
+
+            
+
+            
+
+            
+    
+    
+        //fin jqery 
+        });
+    </script>
+        
+</head>
+
+
+<body>
+    <div class="container">   
+      <!--<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png" alt="pokemon1">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png" alt="pokemon2">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png" alt="pokemon3">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png" alt="pokemon4">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/5.png" alt="pokemon5">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png" alt="pokemon6">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/700.png" alt="pokemon700">-->  
+
+
+        
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+    
+</html>

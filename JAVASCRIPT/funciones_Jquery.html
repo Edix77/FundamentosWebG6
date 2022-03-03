@@ -118,10 +118,19 @@
     });
 
 
+    //ATTR() -ATRIBUTOS, sirve para obtener/asignar el valor a un atributo
+    $("#btn20").click(function(){ 
+       alert($("#btn1").attr("class"));// obteniendo
+       $("#btn1").attr("class", " btn btn-danger"); // asignar o cambiar el valor
+       $("#btn1").attr("name", "boton1");
+       $("#btn1").attr("name", "boton1");
+
+    });
+
 
 
     //-4 eventos
-    //.click
+    //.click es un evento
 
 
 
@@ -142,7 +151,8 @@
     <div class="container">
         <div id="efex">
             <br>
-            <input type="text" class="form-class" id="nombre">
+            <img src="bg-header.jpg" alt="iguana" style="width: 20;height: auto; ">
+            <input type="text" class="form-class" id="nombre" value="texto por default">
             <p>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor excepturi quia quas voluptates harum! Nemo sunt tenetur quos doloremque velit qui nisi ut! Deleniti delectus a eaque tempora, repellat voluptates. 
             </p>
 
@@ -182,6 +192,9 @@
         <hr>
         <button class="btn btn-secondary" id="btn18" > text</button>
         <button class="btn btn-secondary" id="btn19" > val</button>
+        <br>
+        <hr>
+        <button class="btn btn-success" id="btn20" > attr</button>
 
         
 
