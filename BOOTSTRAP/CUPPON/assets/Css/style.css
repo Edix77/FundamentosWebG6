@@ -3,13 +3,13 @@ body{
 }
 
 #fondo{
-    
-
     background-color: #28a745;
 }
 
 #form{
-    
-
     background-color: #28a745;
+}
+.gris{
+    color: #707070;  
+    font-weight: 300;
 }
