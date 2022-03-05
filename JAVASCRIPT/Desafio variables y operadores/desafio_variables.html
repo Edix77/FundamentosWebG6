@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio variables</title>
+
+
+    <script>
+        var opcion= prompt ("Ingrese 1 para SUMAR, Ingrese 2 para RESTAR,Ingrese 3 para MULTIPLICAR, Ingrese 4 para MODULO");
+        if(opcion ==1){
+            var num1=prompt("Ingrese el primer numero a operar")
+        var num2=prompt("Ingrese el segundo numero a operar")
+        var  resultado= parseInt(num1)+parseInt(num2);
+        console.log(resultado);
+        }
+        if(opcion ==2){
+            var num1=prompt("Ingrese el primer numero a operar")
+        var num2=prompt("Ingrese el segundo numero a operar")
+        var  resultado= parseInt(num1)-parseInt(num2);
+        console.log(resultado);
+        }
+        if(opcion ==3){
+            var num1=prompt("Ingrese el primer numero a operar")
+        var num2=prompt("Ingrese el segundo numero a operar")
+        var  resultado= parseInt(num1)*parseInt(num2);
+        console.log(resultado);
+        }
+        if(opcion ==4){
+            var num1=prompt("Ingrese el primer numero a operar")
+        var num2=prompt("Ingrese el segundo numero a operar")
+        var  resultado= parseInt(num1)%parseInt(num2);
+        console.log(resultado);
+        }
+
+        var celcius= prompt ("Ingrese temperatura en grados °CELCIUS para convertirla a grados °KELVIN y Grados °FAHRENHEIT");
+            const kelvin= 273.15;
+            const faren= 32;
+            var resultadoKelvin = parseInt(celcius)+kelvin;
+            var resultadoFahrenheit = parseInt((celcius * 9/5)+32);
+            console.log(resultadoKelvin);
+            alert("Temperatura en grados Kelvin es: "+ resultadoKelvin +"°K");
+            alert("Temperatura en grados Fahrenheit es: "+ resultadoFahrenheit +"°F");
+        
+        var numero = parseInt (prompt ("Ingrese la cantidad de dias para dar el resultado en AÑOS, SEMANAS Y DIAS"))
+            const anio = 365;
+            const semana = 7;
+
+            var resultadoAnio= (Math.floor(numero / anio));
+            var restoAnios = numero % anio;
+            var resultadoSemana = (Math.floor(restoAnios / semana));
+            var dias = restoAnios % semana;
+            alert("Tu número " + numero + " corresponde a " + resultadoAnio + " años " + "con " + resultadoSemana + " semanas " + "y con " + dias + " dias ")
+            
+
+        alert  ("Ingrese 5 numeros para sumarlos y promediarlos");
+            var numero1 = prompt ("Ingrese primer numero"); 
+            var numero2 = prompt ("Ingrese segundo numero");
+            var numero3 = prompt ("Ingrese tercer numero");
+            var numero4 = prompt ("Ingrese cuarto numero");
+            var numero5 = prompt ("Ingrese quinto numero");   
+
+            var resultadoSuma = parseInt(numero1)+parseInt(numero2)+parseInt(numero3)+parseInt(numero4)+parseInt(numero5);
+            var resultadoPromedio = (parseInt(numero1)+parseInt(numero2)+parseInt(numero3)+parseInt(numero4)+parseInt(numero5))/5;
+            alert("La suma de los numeros es: " +resultadoSuma);
+            alert("EL promedio de los numeros es: " + resultadoPromedio);
+
+    </script>
+</head>
+
+
+
+
+<body>
+    
+</body>
+</html>
