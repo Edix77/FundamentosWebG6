@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachipun</title>
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+</head>
+
+<body>
+    <script type="text/javascript">
+        var vecesjuego = prompt("Elije el numero de veces para jugar");
+        vecesjuego = Number(vecesjuego)
+    </script>
+    <div class="container">
+        <h1> Bienvenido al Juego de Cachipun</h1>
+
+        <div id="result">
+
+            <img id="machine-img" src="assets/IMG/rock.png">
+
+            <div id="start-text">
+                Escoje una opcion
+            </div>
+
+            <img id="user-img" src="assets/IMG/rock.png">
+
+        </div>
+
+        <div  id="group-btn">
+            <button id="piedra" type="button">
+                <img src="assets/IMG/rock.png"/>
+            </button>
+            <button id="papel" type="button">
+                <img src="assets/IMG/paper.png"/>
+            </button>
+            <button id="tijera" type="button">
+                <img src="assets/IMG/scissors.png"/>
+            </button>
+        </div>
+
+       
+
+    </div>
+    <script src="assets/JS/funciones.js"></script>
+</body>
+
+</html>
