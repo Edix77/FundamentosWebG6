@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Multiplicacion</title>
+</head>
+<script>
+
+let multiplicacion = () => {
+
+alert(" Por favor ingresar un numero para mostrarte la tabla de multiplicacion del mismo y su factorial");
+var numero = parseInt(prompt("Ingresa un numero del 1 al 20 para mostrarte su tabla de multiplicar y su factorial"));
+if (numero < 1 || numero > 20) {
+    let contador = 0;
+    do {
+        alert("Tienes que ingresar un numero entre 1 y 20")
+        numero = parseInt(prompt("Ingresa un numero del 1 al 20 para mostrarte su tabla de multiplicar y su factorial"));
+        contador = contador + 1;
+        if (contador == 2) {
+            alert("Hasta pronto")
+            break;
+        }
+    }
+    while (numero < 1 || numero > 20)
+} else {
+    for (let i = 1; i <= numero; i++) {
+        alert(`${i} x ${numero} =  ${i*numero}`)
+    }
+
+    for (let i = 1; i <= numero; i++) {
+        let factorial = 1;
+        for (let j = 1; j <= i; j++) {
+            factorial = factorial * j;
+        }
+        alert(`El factorial de  ${i}  es ${factorial}`);
+    }
+}
+}   
+multiplicacion();
+
+//final del script
+</script>
+<body>    
+</body>
+
+</html>
